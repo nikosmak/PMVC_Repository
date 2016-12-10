@@ -29,7 +29,7 @@ public class NurseActionHandler extends ActionHandler {
 	/* (non-Javadoc)
 	 * @see com.nlogic.pmvc.control.handler.actions.IActionHandler#action()
 	 */
-	@Override
+	
 	public String action() {
 		IHealthBean healthBean = (IHealthBean) pmvcObject;
 //		String healthDescription = resourceLoader.getResourceValue(HealthUserIntefaceKeys.NURSE_DESCRIPTION, Resources.HEALTH_UI);

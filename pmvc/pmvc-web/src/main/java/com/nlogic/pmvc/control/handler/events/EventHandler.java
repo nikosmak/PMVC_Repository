@@ -19,7 +19,7 @@ public abstract class EventHandler extends PMVCHandler implements IEventHandler{
 	public EventHandler() {
 	}
 	
-	@Override
+	
 	public abstract void handleListChangeEvent(ActionEvent e); //throws JessException;
 	
 	

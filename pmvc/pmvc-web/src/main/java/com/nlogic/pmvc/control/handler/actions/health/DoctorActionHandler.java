@@ -31,7 +31,7 @@ public class DoctorActionHandler extends ActionHandler {
 	/* (non-Javadoc)
 	 * @see com.nlogic.pmvc.control.handler.actions.IActionHandler#action()
 	 */
-	@Override
+	
 	public String action() {
 		IHealthBean healthBean = (IHealthBean) pmvcObject;
 		String healthDescription = DoctorInfo.getInstance().getInfo();

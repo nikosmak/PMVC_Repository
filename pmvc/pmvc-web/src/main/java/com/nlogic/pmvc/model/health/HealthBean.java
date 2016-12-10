@@ -81,7 +81,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the health description
 	 */
-	@Override
+	
 	public String getHealthDescription() {
 		return healthDescription;
 	}
@@ -91,7 +91,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param healthDescription the new health description
 	 */
-	@Override
+	
 	public void setHealthDescription(String healthDescription) {
 		this.healthDescription = healthDescription;
 	}
@@ -102,7 +102,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the ui choice list
 	 */
-	@Override
+	
 	public Collection<SelectItem> getUiChoiceList() {
 		return uiChoiceList;
 	}
@@ -113,7 +113,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param uiChoiceList the new ui choice list
 	 */
-	@Override
+	
 	public void setUiChoiceList(Collection<SelectItem> uiChoiceList) {
 		this.uiChoiceList = uiChoiceList;
 	}
@@ -124,7 +124,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the ui choice
 	 */
-	@Override
+	
 	public String getUiChoice() {
 		return uiChoice;
 	}
@@ -135,7 +135,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param uiChoice the new ui choice
 	 */
-	@Override
+	
 	public void setUiChoice(String uiChoice) {
 		this.uiChoice = uiChoice;
 	}
@@ -146,7 +146,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the link four label
 	 */
-	@Override
+	
 	public String getLinkFourLabel() {
 		return linkFourLabel;
 	}
@@ -157,7 +157,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param linkFourLabel the new link four label
 	 */
-	@Override
+	
 	public void setLinkFourLabel(String linkFourLabel) {
 		this.linkFourLabel = linkFourLabel;
 	}
@@ -168,7 +168,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the link four url
 	 */
-	@Override
+	
 	public String getLinkFourUrl() {
 		return linkFourUrl;
 	}
@@ -179,7 +179,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param linkFourUrl the new link four url
 	 */
-	@Override
+	
 	public void setLinkFourUrl(String linkFourUrl) {
 		this.linkFourUrl = linkFourUrl;
 	}
@@ -190,7 +190,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the link five label
 	 */
-	@Override
+	
 	public String getLinkFiveLabel() {
 		return linkFiveLabel;
 	}
@@ -201,7 +201,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param linkFiveLabel the new link five label
 	 */
-	@Override
+	
 	public void setLinkFiveLabel(String linkFiveLabel) {
 		this.linkFiveLabel = linkFiveLabel;
 	}
@@ -212,7 +212,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the link five url
 	 */
-	@Override
+	
 	public String getLinkFiveUrl() {
 		return linkFiveUrl;
 	}
@@ -223,7 +223,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param linkFiveUrl the new link five url
 	 */
-	@Override
+	
 	public void setLinkFiveUrl(String linkFiveUrl) {
 		this.linkFiveUrl = linkFiveUrl;
 	}
@@ -234,7 +234,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the action button value
 	 */
-	@Override
+	
 	public String getActionButtonValue() {
 		return actionButtonValue;
 	}
@@ -245,7 +245,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param actionButtonValue the new action button value
 	 */
-	@Override
+	
 	public void setActionButtonValue(String actionButtonValue) {
 		this.actionButtonValue = actionButtonValue;
 	}
@@ -256,7 +256,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @return the health picture
 	 */
-	@Override
+	
 	public String getHealthPicture() {
 		return healthPicture;
 	}
@@ -267,7 +267,7 @@ public class HealthBean extends PMVCObject implements IHealthBean{
 	 *
 	 * @param healthPicture the new health picture
 	 */
-	@Override
+	
 	public void setHealthPicture(String healthPicture) {
 		this.healthPicture = healthPicture;
 	}
