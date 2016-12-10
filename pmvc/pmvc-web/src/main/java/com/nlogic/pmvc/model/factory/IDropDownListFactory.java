@@ -8,7 +8,7 @@ import java.util.Map;
 import javax.faces.model.SelectItem;
 
 /**
- * The Interface IUserInterfaceBuilder.
+ * The Interface {@link IDropDownListFactory}.
  *
  * @author nikosmak
  */

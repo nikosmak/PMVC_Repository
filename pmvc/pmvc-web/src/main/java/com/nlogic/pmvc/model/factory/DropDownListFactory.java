@@ -19,7 +19,7 @@ import javax.faces.model.SelectItem;
 import com.nlogic.pmvc.view.util.SelectItemBuilder;
 
 /**
- * The Class UserInterfaceBuilder.
+ * The Class {@link DropDownListFactory}.
  * 
  * @author nikosmak
  */
@@ -32,7 +32,7 @@ public class DropDownListFactory implements	IDropDownListFactory {
 	}
 
 	/**
-	 * The Class UserInterfaceBuilderInstanceHolder.
+	 * The Class DropDownListFactoryInstanceHolder.
 	 */
 	private static class DropDownListFactoryInstanceHolder {
 
@@ -41,22 +41,19 @@ public class DropDownListFactory implements	IDropDownListFactory {
 	}
 
 	/**
-	 * Gets the single instance of UserInterfaceBuilder.
+	 * Gets the single instance of {@link DropDownListFactory}.
 	 * 
-	 * @return single instance of UserInterfaceBuilder
+	 * @return single instance of {@link DropDownListFactory}
 	 */
 	public static IDropDownListFactory getInstance() {
 		return DropDownListFactoryInstanceHolder.INSTANCE;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.nlogic.pmvc.model.builder.IUserInterfaceBuilder#addToMap(java.util
-	 * .Map, java.lang.String, java.lang.String)
-	 */
 	
+	
+	/* (non-Javadoc)
+	 * @see com.nlogic.pmvc.model.factory.IDropDownListFactory#addToMap(java.util.Map, java.lang.String, java.lang.String)
+	 */
 	public Map<String, String> addToMap(Map<String, String> map, String key,String value) {
 		if (map.equals(null)) {
 			map = new HashMap<String, String>();
