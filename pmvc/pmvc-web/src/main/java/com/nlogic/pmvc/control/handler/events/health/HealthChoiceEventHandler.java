@@ -8,7 +8,6 @@ import javax.faces.event.ActionEvent;
 
 import com.nlogic.pmvc.control.handler.events.EventHandler;
 import com.nlogic.pmvc.control.manager.actions.health.HealthActionManager;
-import com.nlogic.pmvc.enumerations.HealthBeans;
 import com.nlogic.pmvc.enumerations.ManagedBeans;
 import com.nlogic.pmvc.model.health.HealthBean;
 import com.nlogic.pmvc.model.managed.PMVCManagedBeanContainer;
