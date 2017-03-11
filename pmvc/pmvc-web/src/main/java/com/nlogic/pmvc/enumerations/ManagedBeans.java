@@ -30,7 +30,7 @@ public enum ManagedBeans {
 	/** The HEALT h_ actio n_ manager. */
 	HEALTH_ACTION_MANAGER(HealthActionManager.class,ManagedBeanNamesPropertyKeys.HEALTH_ACTION_MANAGER_KEY,false),
 		
-	PMVC_MANAGED_BEAN_CONTAINTER(PMVCManagedBeanContainer.class,ManagedBeanNamesPropertyKeys.PMVC_MANAGED_BEAN_CONTAINER,false);
+	PMVC_MANAGED_BEAN_CONTAINER(PMVCManagedBeanContainer.class,ManagedBeanNamesPropertyKeys.PMVC_MANAGED_BEAN_CONTAINER,false);
 	
 
 	/** The bean class. */

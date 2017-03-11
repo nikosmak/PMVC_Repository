@@ -22,7 +22,7 @@ public class HealthChoiceEventHandler  extends EventHandler{
 
 	@Override
 	public void handleListChangeEvent(ActionEvent e) {
-		PMVCManagedBeanContainer pmvcManagedBeanContainer = (PMVCManagedBeanContainer) ViewUtil.getManagedBeanInstance(ManagedBeans.PMVC_MANAGED_BEAN_CONTAINTER);
+		PMVCManagedBeanContainer pmvcManagedBeanContainer = (PMVCManagedBeanContainer) ViewUtil.getManagedBeanInstance(ManagedBeans.PMVC_MANAGED_BEAN_CONTAINER);
 		HealthBean healthBean = (HealthBean) pmvcManagedBeanContainer.getHealthBean();		
 		HealthActionManager healthActionManager = (HealthActionManager) ViewUtil.getManagedBeanInstance(ManagedBeans.HEALTH_ACTION_MANAGER);
 //		Important in order to switch the action handler and the model.
