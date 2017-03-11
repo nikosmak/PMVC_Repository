@@ -1,4 +1,4 @@
-package com.nlogic.pmvc.control.handler.events.health;
+package com.nlogic.pmvc.enumerations;
 
 import java.lang.reflect.InvocationTargetException;
 
