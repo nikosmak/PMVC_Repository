@@ -5,7 +5,7 @@ package com.nlogic.pmvc.control.handler.actions.health;
 
 import com.nlogic.domain.resources.Resources;
 import com.nlogic.pmvc.control.handler.actions.ActionHandler;
-import com.nlogic.pmvc.model.health.HealthUserIntefaceKeys;
+import com.nlogic.pmvc.model.health.HealthUserInterfaceKeys;
 import com.nlogic.pmvc.model.health.IHealthBean;
 import com.nlogic.pmvc.model.managed.PMVCObject;
 import com.nlogic.semantic.ontology.jena.DoctorInfo;
@@ -36,11 +36,11 @@ public class DoctorActionHandler extends ActionHandler {
 		IHealthBean healthBean = (IHealthBean) pmvcObject;
 		String healthDescription = DoctorInfo.getInstance().getInfo();
 		
-		String linkFourLabel = resourceLoader.getResourceValue(HealthUserIntefaceKeys.LINK_FOUR_LABEL_DOCTOR_KEY, Resources.HEALTH_UI);
-		String linkFourURL = resourceLoader.getResourceValue(HealthUserIntefaceKeys.LINK_FOUR_URL_DOCTOR_KEY, Resources.HEALTH_UI);
+		String linkFourLabel = resourceLoader.getResourceValue(HealthUserInterfaceKeys.LINK_FOUR_LABEL_DOCTOR_KEY, Resources.HEALTH_UI);
+		String linkFourURL = resourceLoader.getResourceValue(HealthUserInterfaceKeys.LINK_FOUR_URL_DOCTOR_KEY, Resources.HEALTH_UI);
 		
-		String linkFiveLabel = resourceLoader.getResourceValue(HealthUserIntefaceKeys.LINK_FIVE_LABEL_DOCTOR_KEY, Resources.HEALTH_UI);
-		String linkFiveURL = resourceLoader.getResourceValue(HealthUserIntefaceKeys.LINK_FIVE_URL_DOCTOR_KEY, Resources.HEALTH_UI);
+		String linkFiveLabel = resourceLoader.getResourceValue(HealthUserInterfaceKeys.LINK_FIVE_LABEL_DOCTOR_KEY, Resources.HEALTH_UI);
+		String linkFiveURL = resourceLoader.getResourceValue(HealthUserInterfaceKeys.LINK_FIVE_URL_DOCTOR_KEY, Resources.HEALTH_UI);
 		
 		healthBean.setHealthDescription(healthDescription);
 		healthBean.setLinkFourLabel(linkFourLabel);

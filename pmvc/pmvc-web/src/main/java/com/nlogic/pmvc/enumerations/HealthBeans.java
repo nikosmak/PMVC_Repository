@@ -13,7 +13,7 @@ import com.nlogic.pmvc.control.handler.actions.health.NurseActionHandler;
 import com.nlogic.pmvc.control.handler.actions.health.PatientActionHandler;
 import com.nlogic.pmvc.model.health.DoctorBean;
 import com.nlogic.pmvc.model.health.HealthBean;
-import com.nlogic.pmvc.model.health.HealthUserIntefaceKeys;
+import com.nlogic.pmvc.model.health.HealthUserInterfaceKeys;
 import com.nlogic.pmvc.model.health.NurseBean;
 import com.nlogic.pmvc.model.health.PatientBean;
 import com.nlogic.pmvc.model.managed.PMVCObject;
@@ -26,34 +26,34 @@ public enum HealthBeans {
 	/**
 	 * The {@link DoctorBean}
 	 */
-	DOCTOR(HealthUserIntefaceKeys.SELECT_LIST_DOCTOR_KEY, DoctorActionHandler.class) {
+	DOCTOR(HealthUserInterfaceKeys.SELECT_LIST_DOCTOR_KEY, DoctorActionHandler.class) {
 		@Override
 		public HealthBean assignModel(HealthBean healthBean) {
 			return new DoctorBean(healthBean.getUiChoiceList(), healthBean.getUiChoice(),
 					DoctorInfo.getInstance().getInfo(), ResourceLoader.getInstance()
-							.getResourceValue(HealthUserIntefaceKeys.IMG_DOCTOR_KEY, Resources.HEALTH_UI));
+							.getResourceValue(HealthUserInterfaceKeys.IMG_DOCTOR_KEY, Resources.HEALTH_UI));
 		}
 	},
 	/**
 	 * The {@link NurseBean}
 	 */
-	NURSE(HealthUserIntefaceKeys.SELECT_LIST_NURSE_KEY, NurseActionHandler.class) {
+	NURSE(HealthUserInterfaceKeys.SELECT_LIST_NURSE_KEY, NurseActionHandler.class) {
 		@Override
 		public HealthBean assignModel(HealthBean healthBean) {
 			return new NurseBean(healthBean.getUiChoiceList(), healthBean.getUiChoice(),
 					NurseInfo.getInstance().getInfo(), ResourceLoader.getInstance()
-							.getResourceValue(HealthUserIntefaceKeys.IMG_NURSE_KEY, Resources.HEALTH_UI));
+							.getResourceValue(HealthUserInterfaceKeys.IMG_NURSE_KEY, Resources.HEALTH_UI));
 		}
 	},
 	/**
 	 * The {@link PatientBean}
 	 */
-	PATIENT(HealthUserIntefaceKeys.SELECT_LIST_PATIENT_KEY, PatientActionHandler.class) {
+	PATIENT(HealthUserInterfaceKeys.SELECT_LIST_PATIENT_KEY, PatientActionHandler.class) {
 		@Override
 		public HealthBean assignModel(HealthBean healthBean) {
 			return new PatientBean(healthBean.getUiChoiceList(), healthBean.getUiChoice(),
 					PatientInfo.getInstance().getInfo(), ResourceLoader.getInstance()
-							.getResourceValue(HealthUserIntefaceKeys.IMG_PATIENT_KEY, Resources.HEALTH_UI));
+							.getResourceValue(HealthUserInterfaceKeys.IMG_PATIENT_KEY, Resources.HEALTH_UI));
 		}
 	};
 	

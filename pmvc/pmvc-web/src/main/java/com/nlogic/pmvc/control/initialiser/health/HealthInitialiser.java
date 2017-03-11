@@ -12,7 +12,7 @@ import com.nlogic.pmvc.control.manager.events.HealthEventManager;
 import com.nlogic.pmvc.enumerations.ManagedBeans;
 import com.nlogic.pmvc.model.health.DoctorBean;
 import com.nlogic.pmvc.model.health.HealthBean;
-import com.nlogic.pmvc.model.health.HealthUserIntefaceKeys;
+import com.nlogic.pmvc.model.health.HealthUserInterfaceKeys;
 import com.nlogic.pmvc.model.managed.PMVCObject;
 import com.nlogic.pmvc.model.managed.PMVCManagedBeanContainer;
 import com.nlogic.pmvc.view.util.ViewUtil;
@@ -38,13 +38,13 @@ public class HealthInitialiser extends Initialiser{
 		super.init();
 		PMVCManagedBeanContainer managedBeanContainer = (PMVCManagedBeanContainer) pmvcObject;
 		HealthBean healthBean = new DoctorBean();
-		String healthDescription = resourceLoader.getResourceValue(HealthUserIntefaceKeys.DOCTOR_DESCRIPTION, Resources.HEALTH_UI);
+		String healthDescription = resourceLoader.getResourceValue(HealthUserInterfaceKeys.DOCTOR_DESCRIPTION, Resources.HEALTH_UI);
 		
-		String linkFourLabel = resourceLoader.getResourceValue(HealthUserIntefaceKeys.LINK_FOUR_LABEL_DOCTOR_KEY, Resources.HEALTH_UI);
-		String linkFourURL = resourceLoader.getResourceValue(HealthUserIntefaceKeys.LINK_FOUR_URL_DOCTOR_KEY, Resources.HEALTH_UI);
+		String linkFourLabel = resourceLoader.getResourceValue(HealthUserInterfaceKeys.LINK_FOUR_LABEL_DOCTOR_KEY, Resources.HEALTH_UI);
+		String linkFourURL = resourceLoader.getResourceValue(HealthUserInterfaceKeys.LINK_FOUR_URL_DOCTOR_KEY, Resources.HEALTH_UI);
 		
-		String linkFiveLabel = resourceLoader.getResourceValue(HealthUserIntefaceKeys.LINK_FIVE_LABEL_DOCTOR_KEY, Resources.HEALTH_UI);
-		String linkFiveURL = resourceLoader.getResourceValue(HealthUserIntefaceKeys.LINK_FIVE_URL_DOCTOR_KEY, Resources.HEALTH_UI);
+		String linkFiveLabel = resourceLoader.getResourceValue(HealthUserInterfaceKeys.LINK_FIVE_LABEL_DOCTOR_KEY, Resources.HEALTH_UI);
+		String linkFiveURL = resourceLoader.getResourceValue(HealthUserInterfaceKeys.LINK_FIVE_URL_DOCTOR_KEY, Resources.HEALTH_UI);
 		
 		healthBean.setHealthDescription(healthDescription);
 		healthBean.setLinkFourLabel(linkFourLabel);
@@ -55,9 +55,9 @@ public class HealthInitialiser extends Initialiser{
 		
 		//select list initial values
 		Map<String,String> map = new HashMap<String, String>();
-		dropDownListFactory.addToMap(map, HealthUserIntefaceKeys.SELECT_LIST_DOCTOR_KEY,  resourceLoader.getResourceValue(HealthUserIntefaceKeys.SELECT_LIST_DOCTOR_KEY, Resources.HEALTH_UI));
-		dropDownListFactory.addToMap(map, HealthUserIntefaceKeys.SELECT_LIST_NURSE_KEY, resourceLoader.getResourceValue(HealthUserIntefaceKeys.SELECT_LIST_NURSE_KEY, Resources.HEALTH_UI));
-		dropDownListFactory.addToMap(map, HealthUserIntefaceKeys.SELECT_LIST_PATIENT_KEY, resourceLoader.getResourceValue(HealthUserIntefaceKeys.SELECT_LIST_PATIENT_KEY, Resources.HEALTH_UI));
+		dropDownListFactory.addToMap(map, HealthUserInterfaceKeys.SELECT_LIST_DOCTOR_KEY,  resourceLoader.getResourceValue(HealthUserInterfaceKeys.SELECT_LIST_DOCTOR_KEY, Resources.HEALTH_UI));
+		dropDownListFactory.addToMap(map, HealthUserInterfaceKeys.SELECT_LIST_NURSE_KEY, resourceLoader.getResourceValue(HealthUserInterfaceKeys.SELECT_LIST_NURSE_KEY, Resources.HEALTH_UI));
+		dropDownListFactory.addToMap(map, HealthUserInterfaceKeys.SELECT_LIST_PATIENT_KEY, resourceLoader.getResourceValue(HealthUserInterfaceKeys.SELECT_LIST_PATIENT_KEY, Resources.HEALTH_UI));
 		
 		healthBean.setUiChoiceList(dropDownListFactory.build(map));
 		managedBeanContainer.setHealthBean(healthBean);
